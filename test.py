@@ -6,7 +6,7 @@ parameters = pika.ConnectionParameters(host='localhost',port=5672,\
 
 def handle_delivery(body):
     """Called when we receive a message from RabbitMQ"""
-    print body
+    print(body)
 
 def on_connected(connection):
     """Called when we are fully connected to RabbitMQ"""
